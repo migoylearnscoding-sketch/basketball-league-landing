@@ -1,50 +1,35 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Basketball League Landing Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. User-first web experience
+The app must prioritize clear content, easy navigation, and legible layout on desktop and mobile. Visual hierarchy, responsive design, and accessible text contrast are required.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Minimal, maintainable implementation
+Prefer simple static HTML and CSS. Only add JavaScript or external dependencies when necessary for a measurable improvement in usability or performance.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Performance and reliability
+Keep page assets small, fast, and cache-friendly. The site should load quickly on standard mobile networks and behave consistently across supported browsers.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Accessibility by default
+Use semantic HTML, descriptive alt text, and logical document structure. Interactive elements must be keyboard-navigable and readable by assistive technologies.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Content clarity and branding
+Deliver a focused landing page for the basketball league with a clear headline, value proposition, call to action, and supporting imagery.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Constraints
+- The project must remain a lightweight static web app.
+- Core files are `index.html` and `styles.css`; additional assets must be intentionally added.
+- Avoid large frameworks and unnecessary build tooling unless justified.
+- Keep styling consistent and easy to update.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Workflow
+- Implement changes in small, reviewable increments.
+- Use Git for version control and keep the working tree clean.
+- Prefer direct edits to `index.html` and `styles.css` for content and layout updates.
+- Verify the site visually in a browser after each meaningful change.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution defines the minimum requirements for the web app. All updates should preserve simplicity, performance, and accessibility. Any deviation from the static landing page approach must be documented and approved before implementation.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0 | **Ratified**: 2026-06-12 | **Last Amended**: 2026-06-12
